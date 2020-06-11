@@ -225,7 +225,7 @@ function getSearchResults(q) {
 }
 
 function logQuery(f, q) {
-  var sheet = SpreadsheetApp.openById('1mz2-3eqow8Njt7OWAPkU1_5Ap_Ml1uRQZm5jqw9wS4g').getSheetByName('Sheet1');
+  var sheet = SpreadsheetApp.openById('ID').getSheetByName('Sheet1');
   var nextRow = sheet.getLastRow() + 1;
   var date = new Date();
   sheet.getRange('A' + nextRow ).setValue(f);
